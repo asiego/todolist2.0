@@ -93,6 +93,13 @@ $(document).ready(function () {
         });
     }
 
+    $taskList.sortable({ // lisätään drag and drop -toiminnallisuus
+        update: function () {
+            saveTasksToLocalStorage(); // tallentaa uuden järjestyksen
+        }
+    });
+
+
     loadTasksFromLocalStorage(); // ladataan tehtävät kun sivu avataan
     if ($taskList.children().length > 0) {
         $taskList.show();
@@ -110,4 +117,10 @@ $('#filter-active').on('click', function () { // aktiiviset tehtävät
   
 $('#filter-completed').on('click', function () { // valmiit tehtävät
     $('#taskList li').hide().filter('.completed').show();
+});
+
+$taskList.sortable({
+    update: function () {
+        saveTasksToLocalStorage(); // tallennetaan uusi järjestys
+    }
 });
