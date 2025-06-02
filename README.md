@@ -1,13 +1,13 @@
 # todolist 2.0
 Web-sovellusten kehittäminen projekti 3
 
-#Demolinkki:
+# Demolinkki:
 Sovellus tarkasteltavissa: >linkki tähän
 
-#Työnjako
+# Työnjako
 Allekirjoittanut suoritti kaiken työn itse.
 
-#Muita linkkejä
+# Muita linkkejä
 -
 
 # Sovelluksesta:
