@@ -1,0 +1,115 @@
+/* keskitetään */
+body {
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* varmistetaan että sivusto pysyy näkyvissä vaikka tehtäviä olisi useita */
+html, body {
+    height: auto;
+    min-height: 100%;
+}
+
+/* säiliön tyylittely */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    min-width: 320px;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Input + button layout */
+#taskInput {
+    padding: 10px;
+    width: 65%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* tehtävälisäys nappi */
+#addTask {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    background-color: #3367d6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addTask:hover {
+    background-color: #4285f4;
+}
+
+/* tehtävälista tyylittely */
+#taskList {
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+/* tehtävälista flex */
+#taskList li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* valmiit tehtävät - target only the text node */
+#taskList li.completed {
+    color: gray;
+}
+
+#taskList li.completed span {
+    text-decoration: line-through;
+}
+
+/* poista nappi */
+#taskList button {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none !important; /* Ensure button never gets text-decoration */
+}
+
+#taskList button:hover {
+    background-color: #c62828;
+}
+
+/* yleiset filtterityylittelyt*/
+#filters {
+    margin-top: 15px;
+}
+
+/* filtterinappien tyylittely */
+.filter-btn {
+    background-color: #3367d6;
+    border: 1px solid #ccc;
+    color: white;
+    padding: 8px 14px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+    background-color: #4285f4;
+}
+

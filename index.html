@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List 2.0</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List 2.0</h1>
+    <h5>Voit lisätä tehtäviä myös Enter painikkeella</h5>
+    <input type="text" id="taskInput" placeholder="Kirjoita tehtävä">
+    <button id="addTask">Lisää</button>
+    <ul id="taskList" style="display: none;"></ul>
+    <div id="filters">
+        <button id="filter-all" class="filter-btn">Kaikki</button>
+        <button id="filter-active" class="filter-btn">Aktiiviset</button>
+        <button id="filter-completed" class="filter-btn">Valmiit</button>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
