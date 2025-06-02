@@ -57,7 +57,7 @@ $(document).ready(function () {
 
     // tehtävien poistaminen
     function deleteTask(event) {
-        event.stopPropagation(); // estää klikkauksen etenemisen ylös
+        event.stopPropagation(); // tehtävät jonoon
         const $taskItem = $(event.target).parent();
         $taskItem.slideUp(300, function () { // animaatio poistettaessa
             $taskItem.remove();
@@ -119,6 +119,7 @@ $('#filter-completed').on('click', function () { // valmiit tehtävät
     $('#taskList li').hide().filter('.completed').show();
 });
 
+// lisätään drag & drop
 $taskList.sortable({
     update: function () {
         saveTasksToLocalStorage(); // tallennetaan uusi järjestys
