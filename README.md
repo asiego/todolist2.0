@@ -1,4 +1,4 @@
-# todolist 2.0
+# To-Do list 2.0
 Web-sovellusten kehittäminen projekti 3
 
 # Demolinkki:
